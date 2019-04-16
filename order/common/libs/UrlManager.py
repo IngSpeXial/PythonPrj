@@ -19,5 +19,6 @@ class UrlManager(object):
     @staticmethod
     def buildImageUrl(path):
         app_config = app.config["APP"]
-        url = app_config["domain"] + app.config["UPLOAD"]["prefix_url"] + path
+        # url = app_config["domain"] + app.config["UPLOAD"]["prefix_url"] + path
+        url = app.config["UPLOAD"]["prefix_url"] + path
         return url

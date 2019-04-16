@@ -18,7 +18,7 @@
             <view class="a-goods-conts {{item.active? 'active':''}}" bindtap="selectTap" data-index="{{index}}">
                 <view class="goods-info">
                     <view class="img-box">
-                        <image src="{{item.pic_url}}" class="img"/>
+                        <image src="https://images.weserv.nl/?url=http://119.23.73.156:8999{{item.pic_url}}" class="img"/>
                     </view>
                     <view class="text-box">
                         <view class="goods-title">{{item.name}}</view>

@@ -6,7 +6,7 @@ App({
         userInfo: null,
         version: "1.0",
         shopName: "校园订餐系统",
-        domain: "http://192.168.0.102:8999/api"
+        domain: "http://119.23.73.156:8999/api"
     },
     tip:function( params ){
         var that = this;

@@ -6,7 +6,7 @@
     <swiper class="swiper_box" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperchange">
       <block wx:for="{{banners}}" wx:key="id">
         <swiper-item>
-          <image bindtap="tapBanner" data-id="{{item.id}}" src="{{item.pic_url}}" class="slide-image" width="750rpx" height="562.5rpx" />
+          <image bindtap="tapBanner" data-id="{{item.id}}" src="https://images.weserv.nl/?url=http://119.23.73.156:8999{{item.pic_url}}" class="slide-image" width="750rpx" height="562.5rpx" />
         </swiper-item>
       </block>
     </swiper>
@@ -39,7 +39,7 @@
   <view class="goods-container">
     <view class="goods-box" wx:for-items="{{goods}}"  bindtap="toDetailsTap" data-id='{{item.id}}'>
       <view class="img-box">
-        <image src="{{item.pic_url}}" class="image" mode="aspectFill" lazy-load="true" />
+        <image src="https://images.weserv.nl/?url=http://119.23.73.156:8999{{item.pic_url}}" class="image" mode="aspectFill" lazy-load="true" />
       </view>
       <view class="goods-title">{{item.name}}</view>
       <view style='display:flex;'>

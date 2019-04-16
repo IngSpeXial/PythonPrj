@@ -67,9 +67,18 @@
                                     </tr>
                                     </thead>
                                     <tbody>
+                                     {%  if pay_order_list %}
+                                        {% for item in pay_order_list %}
                                     <tr>
-                                        <td colspan="4">暂无订单</td>
+                                       <td>{{ item.order_number }}</td>
+                                       <td>{{ item.pay_time }}</td>
+                                       <td>{{ item.total_price }}</td>
+                                       <td>{{ item.status_desc }}</td>
                                     </tr>
+                                        {% endfor %}
+                                    {% else %}
+                                         <td colspan="4">暂无订单</td>
+                                    {% endif %}
                                     </tbody>
                                 </table>
                             </div>
@@ -85,10 +94,17 @@
                                     <tbody>
                                     <tr>
                                     </tr>
+                                    {%  if comment_list %}
+                                        {% for item in comment_list %}
                                     <tr>
-                                        <td colspan="3">暂无评论</td>
+                                        <td>{{ item.created_time }}</td>
+                                        <td>{{ item.score }}</td>
+                                        <td>{{ item.content }}</td>
                                     </tr>
-
+                                         {% endfor %}
+                                    {% else %}
+                                         <td colspan="3">暂无评论</td>
+                                    {% endif %}
                                     </tbody>
                                 </table>
                             </div>

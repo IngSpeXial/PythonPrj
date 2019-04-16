@@ -12,7 +12,7 @@
         <view class="list-title">菜品列表</view>
         <view class="a-goods" wx:for-items="{{goods_list}}" wx:key="{{index}}">
             <view class="img-box">
-                <image src="{{item.pic_url}}" class="img" />
+                <image src="https://images.weserv.nl/?url=http://119.23.73.156:8999{{item.pic_url}}" class="img" />
             </view>
             <view class="text-box">
                 <view class="arow arow01">

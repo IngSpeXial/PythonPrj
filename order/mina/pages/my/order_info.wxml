@@ -32,7 +32,7 @@
             <block wx:for-items="{{info.goods}}" wx:key="{{index}}">
                 <view class="a-goods">
                     <view class="img-box">
-                      <image src="{{item.pic_url}}" class="img" />
+                      <image src="https://images.weserv.nl/?url=http://119.23.73.156:8999{{item.pic_url}}" class="img" />
                     </view>
                     <view class="text-box">
                       <view class="arow arow01">
